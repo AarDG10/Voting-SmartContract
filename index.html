@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Voting System</h1>
+
+        <div class="admin-section">
+            <h3>Add Candidate</h3>
+            <input type="text" id="candidateName" placeholder="Candidate Name">
+            <button onclick="addCandidate()">Add Candidate</button>
+        </div>
+
+        <div class="vote-section">
+            <h3>Vote for Candidate</h3>
+            <input type="number" id="candidateId" placeholder="Candidate ID">
+            <button onclick="vote()">Vote</button>
+        </div>
+
+        <div class="results-section">
+            <h3>Candidate Results</h3>
+            <input type="number" id="resultCandidateId" placeholder="Candidate ID">
+            <button onclick="getCandidate()">Get Candidate Details</button>
+            <p id="candidateDetails"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="JS Scripts/app.js"></script>
+</body>
+</html>
